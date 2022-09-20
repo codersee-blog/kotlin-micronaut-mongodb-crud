@@ -1,11 +1,14 @@
 package com.codersee.model
 
-import com.codersee.annotation.NoArg
+import io.micronaut.core.annotation.Creator
+import io.micronaut.core.annotation.Introspected
+import org.bson.codecs.pojo.annotations.BsonCreator
+import org.bson.codecs.pojo.annotations.BsonProperty
 import org.bson.types.ObjectId
 
-@NoArg
-data class Company(
-    var id: ObjectId? = null,
-    var name: String,
-    var address: String
+@Introspected
+data class Company @Creator @BsonCreator constructor(
+    @field:BsonProperty("_id") @param:BsonProperty("_id") var id: ObjectId? = null,
+    @field:BsonProperty("name") @param:BsonProperty("name") var name: String,
+    @field:BsonProperty("address") @param:BsonProperty("address") var address: String
 )

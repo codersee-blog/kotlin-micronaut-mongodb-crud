@@ -7,7 +7,7 @@ import com.mongodb.client.result.DeleteResult
 import com.mongodb.client.result.InsertOneResult
 import com.mongodb.client.result.UpdateResult
 import org.bson.types.ObjectId
-import javax.inject.Singleton
+import jakarta.inject.Singleton
 
 @Singleton
 class CompanyRepository(

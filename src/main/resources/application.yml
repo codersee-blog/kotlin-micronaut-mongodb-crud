@@ -1,5 +1,13 @@
 micronaut:
   application:
     name: example
+#  Uncomment to see HTTP client traffic in unit testing
+#  http:
+#    client:
+#      logger-name: traceLogger
 mongodb:
   uri: 'mongodb://localhost:27017/test'
+netty:
+  default:
+    allocator:
+      max-order: 3

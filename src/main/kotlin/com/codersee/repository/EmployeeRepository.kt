@@ -6,8 +6,8 @@ import com.mongodb.client.model.Filters
 import com.mongodb.client.result.DeleteResult
 import com.mongodb.client.result.InsertOneResult
 import com.mongodb.client.result.UpdateResult
+import jakarta.inject.Singleton
 import org.bson.types.ObjectId
-import javax.inject.Singleton
 
 @Singleton
 class EmployeeRepository(

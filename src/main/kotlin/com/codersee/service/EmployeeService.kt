@@ -4,8 +4,8 @@ import com.codersee.exception.NotFoundException
 import com.codersee.model.Employee
 import com.codersee.repository.EmployeeRepository
 import com.codersee.request.EmployeeRequest
+import jakarta.inject.Singleton
 import org.bson.BsonValue
-import javax.inject.Singleton
 
 @Singleton
 class EmployeeService(
