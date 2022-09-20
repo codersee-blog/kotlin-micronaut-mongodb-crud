@@ -6,7 +6,7 @@ import com.codersee.repository.CompanyRepository
 import com.codersee.repository.EmployeeRepository
 import com.codersee.request.CompanyRequest
 import org.bson.BsonValue
-import javax.inject.Singleton
+import jakarta.inject.Singleton
 
 @Singleton
 class CompanyService(
